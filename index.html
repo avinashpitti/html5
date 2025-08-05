@@ -7,6 +7,19 @@
     <link rel="shortcut icon" href="monkey.jpg" type="image/x-icon">
 </head>
 <body>
+
+    <header style="background-color: aqua;">
+        <h1 style="text-align: center;">welcome to osmania university</h1>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">press notes</a>
+        <a href="#">contact</a>
+        <hr>
+
+    </header>
+
+    <main>
+
     <p>This is a  book</p>
     <p>This
         is      a 
@@ -168,6 +181,86 @@
 
 
 
+<form action="lyrics.html" method="post" enctype="multipart/form-data" autocomplete="on">
+    <!--enctype="multipart/form-data"
+        Purpose: This is required when you're uploading files.
+        autocomplete="on"
+        Purpose: Allows the browser to remember and auto-fill previously entered values.
+        Example: If you typed your name or email before in similar forms, the browser may auto-fill it.
+        You can also set this to "off" to disable auto-completion for privacy or security reasons.
+    -->
+    <label for="username">Enter your username:</label>
+    <input type="text" id="username" minlength="8" required> <br><br>
+
+    <label for="password">ENTER PASSWORD:</label>
+    <input type="password" id="password" title="enter valid passowrd"> <br><br>
+
+    <label for="email">EMAIL:</label>
+    <input type="email" id="email" placeholder="avinash@gmail.com" title="enter valid email"> <br><br>
+
+    <label for="phone">PHONE: </label>
+    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="enter valid phone_no"> <br><br>
+
+    
+
+    <label for="bday">Birthday</label>
+    <input type="date" id="bday"> <br><br>
+
+    <label for="quantity">Quantity: </label>
+    <input type="number" id="quantity" min="0" > <br><br>
+    <!--min and max are used to  set the limit for example mostly your marks won't be less than 0 and greater
+    than 100 out of 100 except negative marking system is available. -->
+
+    <label for="marks">Marks:</label>
+    <input type="number" id="marks" min="0" max="100"> <br><br>
+
+    <label for="title">Titles:</label> <br>
+    
+    <label for="Mr.">Mr.</label>
+    <input type="radio" value="Mr." name="title"> 
+
+    <label for="Mrs.">Mrs.</label> 
+    <input type="radio" value="Mrs." name="title"> 
+
+
+    <label for="Ms.">Ms.</label>
+    <input type="radio" value="Ms." name="title"> <br><br>
+
+
+    <label for="payment">PAYMENT:</label>
+    <select name="payment-mode" id="payment">
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="rupay">rupay</option>
+    </select> <br><br>
+    <!--name: When the user selects "Visa" and submits the form, this will be sent to the server:-->
+
+    <label for="comment">Comment:</label>
+    <textarea name="" id="comment" rows="3" cols="30"></textarea> <br><br>
+    <!--we may mention rows and columns-->
+
+    <label for="file"></label>
+    <input type="file" name="" id="file"> <br><br>
+
+        <label for="file"></label>
+    <input type="file" name="" id="file" accept="image"> <br><br>
+
+
+    <input type="checkbox">  
+    <label for="checkbox">Agree for terms and conditions</label> <br><br>
+
+    <input type="reset">
+    <input type="submit">
+</form>
+
+</main>
+
+<footer style="background-color: aqua;">
+    <hr>
+    Author: Avinash <br>
+    &copy; Copyright reserved <br>
+   <small> <a href="mailto@avinash87129.com">avinash87129@gmail.com</a> </small>
+</footer>
 
 </body>
 </html>
